@@ -1,1 +1,18 @@
-Bonjour
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Best Appli'</title>
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+</head>
+<body>
+	<form th:action="@{/sendName}"   >
+		<div class="input">
+			<h1>Best Appli'</h1>
+			<label class="name">Nom </label> <input th:name = "name" class="name" ></input>
+			<button>Valider</button>
+		</div>
+	</form>
+</body>
+</html>
